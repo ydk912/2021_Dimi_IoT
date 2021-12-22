@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>page {{data}}</title>
+</head>
+<body>
+    <h1 id='asdf'>
+        {{col}} {{data}}!!
+    </h1>
+    <button id='go' onclick = "location.href = '/'">go to main</button>
+    <span id='text' style="color: transparent;">{{col}}</span>
+</body>
+<script>
+    let text = document.getElementById('text').innerHTML;
+    console.log(text);
+    if(text=='red'){
+        document.getElementById('asdf').style.color="#FF0000";
+    }
+    if(text=='blue'){
+        document.getElementById('asdf').style.color="#0000FF";
+    }
+</script>
+</html>
